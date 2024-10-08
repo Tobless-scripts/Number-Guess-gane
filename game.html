@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guess Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <audio src="./crowd-cheer-ii-6263.mp3" id="music2" preload="auto"></audio>
+    <audio src="fail-234710.mp3" id="music3" preload="auto"></audio>
+    <audio src="intro-184995.mp3" id="music" preload="auto" loop></audio>
+    <div class="container2" id="container2">
+        <button id="sound" class="button" onclick="music()">Sound</button>
+        <h1 class="h1text">Number Guessing Game</h1>
+        <p class="text">Try to guess the number within 1-50 </p>
+        <p>Welcome to the guess the Number game! Your challenge is to guess the secret number that has been randomly chosen. Can you guess it ?</p>
+        <p>
+            INSTRUCTIONS
+            <ol>
+                <li>Choose a Number: The game has picked a number between 1 to 50. </li>
+                <li>Make Your Guess: Enter Your guess and see if you're correct.</li>
+                <li>Get Hints: After each guess, you will receive a hint - if your guess is too high or too low.</li>
+                <li>Keep Trying: You have 15 attempts to find the correct number.</li>
+            </ol>
+        </p>
+        <button id="btnCheck2" class="btnCheck2" onclick="start()">Start Game</button>
+    </div>
+
+
+
+
+<div class="container3" id="container3">
+    <div class="container">
+        <div id="score" class="score">
+            Score: 0 
+        </div>
+        <div id="tries" class="tries">
+            Trials Left: <span id="trialCount">15</span>
+        </div>
+    </div>
+
+    <h1 class="h1text">Number Guessing Game</h1>
+
+    <input type="number" id="inputNum" placeholder="Input a Number" required>
+
+    <button id="btnCheck" class="btnCheck" onclick="guess()">Check Number</button>
+    
+    <div id="status" class="status"></div>
+    
+    <button id="btnCheck3" class="btnCheck3" onclick="restart()">Restart</button>
+</div>
+    <script src="game.js"></script>
+</body>
+</html>
