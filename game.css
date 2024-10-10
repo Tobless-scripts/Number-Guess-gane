@@ -2,7 +2,8 @@ body{
     background-color: aliceblue;
     margin: 2vw;
     display: block;
-    padding: 2vw 5vw;
+    padding: 1.5vw 1vw 2vw 5vw;
+    overflow: hidden;
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -12,7 +13,7 @@ body{
     justify-content: space-between;
 }
 .score, .tries{
-    border: 3px solid black;
+    border: 3px solid navy;
     padding: .5vw 1vw;
     font-size: 1em;
     cursor: pointer;
@@ -25,6 +26,7 @@ body{
     animation: colorMove 8s infinite linear;
     background-size: 1000% 100%;
     cursor: pointer;
+    font-size: 5em;
 }
 @keyframes colorMove {
     0%{
@@ -58,6 +60,8 @@ input::placeholder{
     text-align: center;
     border: 3px solid navy;
     background-color: slategray;
+    color: white;
+    font-weight: bold;
 }
 .status{
     font-size: .9em;
@@ -67,18 +71,28 @@ input::placeholder{
     font-weight: bold;
 }
 p{
-    font-size: 1em;
+    font-size: 1.5em;
     background: linear-gradient(to right, navy, coral);
     background-clip: text;
     color: transparent;
     font-weight: bold;
 
 }
+.container2{
+    width: 80vw;
+    border: .5em solid white;
+    height: 35em;
+    padding: 0 .5em;
+}
 .container3{
     display:none;
+    width: 80vw;
+    border: .5em solid white;
+    height: 35em;
+    padding: .2em;
 }
 li{
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 700;
     background: linear-gradient(to right, navy, coral);
     background-clip: text;
@@ -93,8 +107,8 @@ li{
     background-color: slategray;
 }
 .button{
-    padding: .5vw 1.5vw;
-    margin: 2vw 5em;
+    padding: .5vw;
+    margin: 2vw 1vw;
     cursor: pointer;
     text-align: center;
     border: 3px solid navy;
@@ -102,9 +116,183 @@ li{
     position: absolute;
     right: 0;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:1320px) {
+    .container2,.container3{
+        height: 50em;
+    }
+    .score,.tries{
+        font-size: 2.2em;
+        margin: 1.5em;
+    }
+    .h1text{
+        margin: 2vw;
+    }
+    li{
+        font-size: 1.5em;
+    }
+    p{
+        font-size: 2em;
+    }
+   input{
+    font-size: 2em;
+   }
+    .btnCheck2{
+        font-size: 2.5em;
+    }
+    .btnCheck,.btnCheck3{
+     font-size: 2em;
+    }
+    .button{
+        font-size: 1em;
+    }
+    .status{
+        font-size: 2em;
+    }
+}
+@media screen and (max-width:1200px) {
+    .container2,.container3{
+        height: 55em;
+    }
+    .h1text{
+        font-size: 3em;
+    }
+    .btnCheck,.btnCheck2,.btnCheck3{
+        font-size: 2em;
+    }
+    li{
+        font-size: 1.7em;
+    }
+}
+@media screen and (max-width:840px) {
     .button{
         right: 0;
         margin: 2vw 0;
     }
-}
+    
+    .container2,.container3{
+        height: 60em;
+        width: 75vw;
+        margin: auto;
+    }
+    .score,.tries{
+        font-size: 1.7em;
+        margin: .5em;
+    }
+    .h1text{
+        margin: 5vw 3vw 2vw 3vw;
+    }
+    li{
+        font-size: 1.5em;
+    }
+    p{
+        font-size: 1.5em;
+    }
+   input{
+    font-size: 1.5em;
+   }
+    .btnCheck2{
+        font-size: 2em;
+    }
+    .btnCheck,.btnCheck3{
+     font-size: 1.5em;
+    }
+    .button{
+        font-size: .5em;
+    }
+    .status{
+        font-size: 1.5em;
+    }
+
+}   
+@media screen and (max-width:540px) {
+    .button{
+        margin: 0 ;
+    }
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    .container2,.container3{
+        height: 60em;
+        width: 95vw;
+        margin: 0;
+        padding: 0;
+    }
+    .score,.tries{
+        font-size: 1.7em;
+        margin: .5em;
+    }
+    .h1text{
+        margin: 5vw 3vw 2vw 3vw;
+    }
+    li{
+        font-size: 1.5em;
+        margin: 0;
+    }
+    p{
+        font-size: 1.5em;
+        margin: 0;
+    }
+   input{
+    font-size: 1.5em;
+   }
+    .btnCheck2{
+        font-size: 2em;
+    }
+    .btnCheck,.btnCheck3{
+     font-size: 1.5em;
+    }
+    .button{
+        font-size: .5em;
+    }
+    .status{
+        font-size: 1.5em;
+    }
+
+}   
+@media screen and (max-width:440px) {
+    .button{
+        margin: 0 ;
+    }
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    .container2,.container3{
+        height: 50em;
+        width: 95vw;
+        margin: 0;
+        padding: .2em;
+    }
+    .score,.tries{
+        font-size: 1.5em;
+        margin: .5em;
+    }
+    .h1text{
+        margin: 5vw 3vw 2vw 3vw;
+    }
+    li{
+        font-size: 1.3em;
+        margin: 0;
+    }
+    p{
+        font-size: 1.3em;
+        margin: 0;
+    }
+   input{
+    font-size: 1.3em;
+   }
+    .btnCheck2{
+        font-size: 1.8em;
+    }
+    .btnCheck,.btnCheck3{
+     font-size: 1.3em;
+    }
+    .button{
+        font-size: .5em;
+    }
+    .status{
+        font-size: 1.3em;
+    }
+
+} 
