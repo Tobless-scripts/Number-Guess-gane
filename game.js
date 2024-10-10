@@ -1,7 +1,7 @@
 let score = 0;
 let tries = 15;
 let gameOver = false;
-let randNum = 3; // Random number between 1 and 100
+let randNum = Math.floor(Math.random()*40+10); // Random number between 1 and 100
 
 const btnCheck2 = document.getElementById('btnCheck3');
 btnCheck2.style.display = 'none'; // Hide the restart button initially
